@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/atass" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="126dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etRegisterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/btn"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="24dp"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/etRegisterName"
+        android:layout_below="@+id/etRegisterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Your Name"
+        android:drawableStart="@drawable/ic_baseline_account_box_24"
+        android:drawablePadding="24dp"
+        android:background="@drawable/btn"
+        />
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_below="@+id/etRegisterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:background="@drawable/btn"
+        android:drawablePadding="24dp"/>
+
+
+    <TextView
+        android:id="@+id/tvLoginHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRegister"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="88dp"
+        android:text="Already Have Account? Login Here"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRegisterPassword"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buton"
+        android:gravity="center"
+        android:text="REGISTER"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

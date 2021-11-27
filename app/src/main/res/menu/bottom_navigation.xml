@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/nav_food"
+    android:icon="@drawable/makananenak"
+    android:title="Food"/>
+    <item
+        android:id="@+id/nav_drink"
+        android:icon="@drawable/minumanenak"
+        android:title="Drinks"
+        />
+    <item
+        android:id="@+id/nav_market"
+        android:icon="@drawable/market"
+        android:title="Market"
+        />
+</menu>

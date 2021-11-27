@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dlMain"
+    tools:openDrawer="end"
+    tools:context=".MenuMakan">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabCategory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_layout_height"
+            android:background="@android:color/white"
+            app:tabIndicatorColor="@color/black"
+            app:tabIndicatorHeight="@dimen/tab_indicator_height"
+            app:tabMode="scrollable" />
+
+        <androidx.viewpager.widget.ViewPager
+
+            android:id="@+id/vpItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabCategory"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rlHeader"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/black"
+                android:padding="@dimen/normal_padding_size">
+
+                <TextView
+                    android:id="@+id/txtHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:text="Detail"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/xlarge_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtClearAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:text="Clear All"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/large_text_size"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rlFooter"
+                android:layout_below="@+id/rlHeader"
+                android:background="@color/black">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <RelativeLayout
+                android:id="@+id/rlFooter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/drawer_footer_height"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/Total"
+                    android:layout_width="@dimen/total_width"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/large_text_size"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnCompleteOrder"
+                    android:text="Order"
+                    android:textSize="@dimen/large_text_size"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/Total"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</RelativeLayout>

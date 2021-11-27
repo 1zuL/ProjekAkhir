@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ijul.projekpembunuh">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity
+            android:name=".MadangAntying"
+            android:exported="false" />
+        <activity
+            android:name=".MenuMakan"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".Menu"
+            android:exported="true" />
+        <activity
+            android:name=".detailmakan"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cart"
+            android:exported="true" />
+        <activity
+            android:name=".Daftar"
+            android:exported="true" />
+        <activity
+            android:name=".Dasboard"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FoodActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FoodActivityDetails"
+            android:exported="true" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Sples"
+            android:exported="true" />
+        <activity
+            android:name=".ThirdActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Yoga"
+            android:exported="true" />
+    </application>
+
+</manifest>
